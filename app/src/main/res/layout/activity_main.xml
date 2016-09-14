@@ -58,12 +58,9 @@
         android:layout_below="@+id/basketball"
         android:id="@+id/save" />
     <Button
-
         android:layout_width="fill_parent"
-
         android:layout_height="wrap_content"
-
+        android:layout_below="@+id/save"
         android:text="转到下一个界面"
-
-        android:onClick="onClick"/>
+        android:id="@+id/next"/>
 </RelativeLayout>

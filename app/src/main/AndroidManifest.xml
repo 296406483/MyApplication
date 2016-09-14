@@ -30,13 +30,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Main2Activity"
-            android:label="Main2 Activity">
-            <intent-filter>
-                <action android:name="com.litreily.Main2Activity"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
+        <activity android:name=".Main2Activity">
         </activity>
     </application>
 
