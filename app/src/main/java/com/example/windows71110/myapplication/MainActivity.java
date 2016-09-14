@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox cbFootBall = null;
     private CheckBox cbBasketBall = null;
     private Button btnSave = null;
-    private Button btnNext = null;
+    private Button btnToLogin = null;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
         cbBasketBall = (CheckBox) super.findViewById(R.id.basketball);
         btnSave = (Button) super.findViewById(R.id.save);
         btnSave.setOnClickListener(new SaveOnClickListener());
-        btnNext = (Button) super.findViewById(R.id.next);
-        btnNext.setOnClickListener(new MyButtonListener());
+        btnToLogin = (Button) super.findViewById(R.id.toLogin);
+        btnToLogin.setOnClickListener(new ToLoginListener());
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
@@ -101,10 +101,10 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), sInfo, Toast.LENGTH_SHORT).show();
         }
     }
-    private class MyButtonListener implements View.OnClickListener {
+    private class ToLoginListener implements View.OnClickListener {
         public void onClick(View v) {
             Intent intent = new Intent();
-            intent.setClass(MainActivity.this, Main2Activity.class);
+            intent.setClass(MainActivity.this, LoginActivity.class);
             MainActivity.this.startActivity(intent);
         }
     }

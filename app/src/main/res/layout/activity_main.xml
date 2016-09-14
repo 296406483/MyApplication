@@ -61,6 +61,6 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/save"
-        android:text="转到下一个界面"
-        android:id="@+id/next"/>
+        android:text="转到Login界面"
+        android:id="@+id/toLogin"/>
 </RelativeLayout>
